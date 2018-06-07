@@ -4,6 +4,7 @@ from math import *
 import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
+from write_mctdh_opfile import *
 
 import os, sys
 libdir = os.path.join(os.path.dirname(__file__), '../../')
@@ -191,7 +192,7 @@ print( "\n *** MCTDH operator ***\n" )
 NameOperator = "20-mer.op"
 print( " Writing operator file to file {} ".format( NameOperator ) )
 
-mime.write_mctdh_opfile( 20, 20, VG_2D, VE_2D, w_2D, RingGS_Morse, RingES_Morse )
+write_mctdh_opfile( 20, 20, VG_2D, VE_2D, w_2D, RingGS_Morse, RingES_Morse )
 
 sys.exit()
 
