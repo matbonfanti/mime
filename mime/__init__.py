@@ -1,2 +1,2 @@
 
-from mime.fittingfunc import sumofproduct
+from mime.sumofproduct import SumOfProduct

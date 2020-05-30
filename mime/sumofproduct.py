@@ -1,17 +1,18 @@
 import sys
 
-import sympy
-import numpy as np
-from scipy.interpolate import interp2d
 import matplotlib.pyplot as plt
+import numpy as np
+import sympy
+from scipy.interpolate import interp2d
 
 # interface to fitting functions
-from mime.optimization import linearfitting, nonlinearfitting
+from mime.optimization import linearfitting
+
 
 #######################################################################################################
 
 
-class sumofproduct:
+class SumOfProduct:
     """ define and fit 2D set of data with a sum of product analytical form """
 
     def __init__(self, xBasisLabel, yBasisLabel, xBasisFormat=None, yBasisFormat=None):

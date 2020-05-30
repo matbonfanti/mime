@@ -26,7 +26,7 @@ yFunctLabels = ["1", "cos(y)", "cos(2*y)", "cos(3*y)", "cos(4*y)"]
 yMCTDHLabels = ["1", "cos[1.0,0.0]", "cos[2.0,0.0]", "cos[3.0,0.0]", "cos[4.0,0.0]"]
 
 # define fitting function
-VG_2D = mime.sumofproduct(xFunctLabels, yFunctLabels, xBasisFormat=xMCTDHLabels, yBasisFormat=yMCTDHLabels)
+VG_2D = mime.SumOfProduct(xFunctLabels, yFunctLabels, xBasisFormat=xMCTDHLabels, yBasisFormat=yMCTDHLabels)
 
 # file to read the input data
 inputfile = "PPV_intra2D_VG_VE_w.dat"
@@ -71,7 +71,7 @@ yFunctLabels = ["1", "cos(y)", "cos(2*y)", "cos(4*y)", "cos(6*y)"]
 yMCTDHLabels = ["1", "cos[1.0,0.0]", "cos[2.0,0.0]", "cos[4.0,0.0]", "cos[6.0,0.0]"]
 
 # define fitting function
-VE_2D = mime.sumofproduct(xFunctLabels, yFunctLabels, xBasisFormat=xMCTDHLabels, yBasisFormat=yMCTDHLabels)
+VE_2D = mime.SumOfProduct(xFunctLabels, yFunctLabels, xBasisFormat=xMCTDHLabels, yBasisFormat=yMCTDHLabels)
 
 # file to read the input data
 inputfile = "PPV_intra2D_VG_VE_w.dat"
@@ -116,7 +116,7 @@ yFunctLabels = ["1", "cos(y)", "cos(2*y)", "cos(3*y)", "cos(4*y)", "cos(5*y)", "
 yMCTDHLabels = ["1", "cos[1.0,0.0]", "cos[2.0,0.0]", "cos[3.0,0.0]", "cos[4.0,0.0]", "cos[5.0,0.0]", "cos[6.0,0.0]"]
 
 # define fitting function
-w_2D = mime.sumofproduct(xFunctLabels, yFunctLabels, xBasisFormat=xMCTDHLabels, yBasisFormat=yMCTDHLabels)
+w_2D = mime.SumOfProduct(xFunctLabels, yFunctLabels, xBasisFormat=xMCTDHLabels, yBasisFormat=yMCTDHLabels)
 
 # file to read the input data
 inputfile = "PPV_intra2D_VG_VE_w.dat"

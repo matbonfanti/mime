@@ -29,7 +29,7 @@ class TestSumOfProductFitting(unittest.TestCase):
                       "sin(2*pi*y/180.)", "cos(2*pi*y/180.)"]
 
         # define fitting function with all the products between xfunctions and yfunctions
-        fittingf = mime.sumofproduct(xfunctions, yfunctions)
+        fittingf = mime.SumOfProduct(xfunctions, yfunctions)
         # do fitting of the data read and stored in self.Coord and self.Pot
         Chisquared = fittingf.fit_data(self.Coord, self.Pot)
 
@@ -57,7 +57,7 @@ class TestSumOfProductFitting(unittest.TestCase):
                       "sinh(2*pi*y/180.)", "cos(2*pi*y/180.)"]
 
         # define fitting function with all the products between xfunctions and yfunctions
-        fittingf = mime.sumofproduct(xfunctions, yfunctions)
+        fittingf = mime.SumOfProduct(xfunctions, yfunctions)
         # do fitting of the data read and stored in self.Coord and self.Pot
         Chisquared = fittingf.fit_data(self.Coord, self.Pot)
 
