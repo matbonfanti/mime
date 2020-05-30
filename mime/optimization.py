@@ -50,7 +50,7 @@ def linearfitting(X, V, BasisFuncExpr, Var, NonLinearValues=None, Weights=None):
     B = np.array([v * w for v, w in zip(V, Weights)])
 
     # Solve the AX = B system with least-squares and return the solution
-    Coefficients, ChiSquared, Rank, Singular = lstsq(A, B)
+    Coefficients, ChiSquared, Rank, Singular = lstsq(A, B, rcond=None)
 
     return Coefficients, ChiSquared[0]
 
